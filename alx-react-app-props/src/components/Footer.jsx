@@ -1,14 +1,9 @@
-// src/UserContext.js
-import React, { createContext } from 'react';
-
-// Create Context
-export const UserContext = createContext();
-
-// Export Context Provider
-export const UserProvider = ({ children, userData }) => {
+function Footer() {
   return (
-    <UserContext.Provider value={userData}>
-      {children}
-    </UserContext.Provider>
+    <footer style={{ backgroundColor: '#333', color: 'white', textAlign: 'center', padding: '10px' }}>
+          <p>© 2023 City Lovers</p>
+      </footer>
   );
-};
+}
+
+export default Footer;
